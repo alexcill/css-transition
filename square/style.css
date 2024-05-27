@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  font-size: 125%;
+  font-family: sans-serif;
+}
+
+.center {
+  /* a technique to center the content */
+  display: flex;
+  /* center across the MAIN axis */
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  overflow: hidden;
+  display: inline-block;
+
+  width: 200px;
+  aspect-ratio: 1/1;
+
+  position: relative;
+
+  background-color: #eee;
+}
+
+.container-inside{
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.container-letter{
+color: white;
+font-weight: 900;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+position: relative;
+z-index: 1;
+
+background-color: pink;
+
+}
+
+.container-black{
+background-color: black;
+
+z-index: 0;
+}
+
+.container-green{
+background-color: green;
+
+z-index: 1;
+}

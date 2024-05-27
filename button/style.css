@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  font-size: 125%;
+}
+
+.center {
+  /* a technique to center the content */
+  display: flex;
+  /* center across the MAIN axis */
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  color: white;
+}
+
+a {
+  display: inline-block;
+  /* display: flex;
+
+  align-items: center;
+  gap: .5em; */
+
+  background-color: black;
+
+  padding: 1em;
+  border-radius: 50px;
+
+  color: white;
+
+  box-shadow: 0px 5px 5px 0px rgb(121, 121, 121);
+
+  text-decoration: none;
+
+  transition: all 333ms ease;
+}
+
+/* a:hover {
+  animation: 2s ease-in-out infinite;
+
+  background-color: aquamarine;
+} */
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+
+  margin: 0;
+}
+
+/* Prova del botton */
+
+.booknow:hover {
+  width: 200px;
+  transition: 0.4s;
+  border-radius: 35px;
+}
+
+.booknow {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.4s;
+  height: 35px;
+  padding: 0 5px;
+  border-radius: 35px;
+  cursor: pointer;
+  border: 1px solid;
+}
